@@ -38,7 +38,7 @@ jobs:
           script: |
             echo "Connected to server, proceeding with deployment..."
             source venv/bin/activate
-            cd /home/${{ secrets.SSH_USER }}/task-management
+            cd /home/${{ secrets.SSH_USER }}/task-management-JWT
             git pull origin main
             pip install -r requirements.txt
             export DB_NAME='${{ secrets.DB_NAME }}'
