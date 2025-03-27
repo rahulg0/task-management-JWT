@@ -47,5 +47,5 @@ jobs:
             export DB_HOST='${{ secrets.DB_HOST }}'
             export DB_PORT='${{ secrets.DB_PORT }}'
             python manage.py migrate
-            systemctl restart task_gunicorn
-            systemctl restart nginx
+            systemctl restart gunicorn
+            systemctl restart Amazon
