@@ -1,7 +1,7 @@
 import jwt
 import datetime
 from django.conf import settings
-from api.models import User  # Import your custom User model
+from api.models import User
 
 def generate_jwt_token(user):
     payload = {
